@@ -110,12 +110,17 @@ global:
 ```bash
 # Start all services
 docker-compose up -d
+# if .env is used
+docker-compose --env-file .env up -d
 
 # Verify all containers are running
 docker-compose ps
 
 # Check logs
 docker-compose logs -f
+
+# Verify Alertmanager
+docker logs alertmanager
 ```
 
 ### 4. Access Services
