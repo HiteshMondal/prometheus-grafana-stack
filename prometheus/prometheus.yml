@@ -38,7 +38,7 @@ scrape_configs:
   # cAdvisor - Container metrics
   - job_name: 'cadvisor'
     static_configs:
-      - targets: ['cadvisor:8080']
+      - targets: ['cadvisor:8000']
         labels:
           environment: 'production'
 

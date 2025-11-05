@@ -131,7 +131,7 @@ docker logs alertmanager
 | Prometheus | http://localhost:9090 | None |
 | AlertManager | http://localhost:9093 | None |
 | Node Exporter | http://localhost:9100 | None |
-| cAdvisor | http://localhost:8080 | None |
+| cAdvisor | http://localhost:8000 | None |
 
 ## 📁 Directory Structure
 
@@ -168,7 +168,7 @@ Create `prometheus/targets/services.json`:
 ```json
 [
   {
-    "targets": ["api-server-1:8080", "api-server-2:8080"],
+    "targets": ["api-server-1:8000", "api-server-2:8000"],
     "labels": {
       "job": "api-server",
       "environment": "production",

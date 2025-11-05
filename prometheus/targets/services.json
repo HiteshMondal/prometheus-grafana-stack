@@ -1,6 +1,6 @@
 [
   {
-    "targets": ["api-server-1:8080", "api-server-2:8080"],
+    "targets": ["api-server-1:8000", "api-server-2:8000"],
     "labels": {
       "job": "api-server",
       "environment": "production",
